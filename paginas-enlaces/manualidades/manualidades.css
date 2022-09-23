@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: lato;
+}
+body{
+    position: relative;
+    height: 110vh;
+    background-color: rgba(0, 0, 0, 0.9) ;   
+}   
+.titulo{
+    font-size: 2rem;
+    color: red;
+    text-align: center;
+    align-items: center;
+    text-transform: uppercase;
+    padding-top: 2rem;
+    padding-bottom: 0.2rem;
+}
+.imagenes{
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    overflow: hidden;
+    padding-top: 2rem;
+     
+}
+ul{
+    display: flex;
+    width: 700%;
+    animation: romero 30s infinite alternate-reverse linear ;
+    
+}
+li{
+    width: 100%;
+    list-style: none;  
+}
+img{
+    width: 90%;
+    height: 80%;
+}
+@keyframes romero{
+    0%{margin-left: 0;}
+    10%{margin-left: 0;}
+
+    14%{margin-left: -100%;}
+    24%{margin-left: -100%;}
+    
+    28%{margin-left: -200%;}
+    38%{margin-left: -200%;}
+
+    42%{margin-left: -300%;}
+    52%{margin-left: -300%;}
+
+    56%{margin-left: -400%;}
+    66%{margin-left: -400%;}
+
+    70%{margin-left: -500%;}
+    80%{margin-left: -500%;}
+
+    84%{margin-left: -600%;}
+    100%{margin-left: -600%;}  
+}
+.informacion{
+    
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding-bottom: 0.5rem;
+    
+    
+    
+}
+.derecha{
+    margin: 0rem 0.5rem 0rem 1rem;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 2rem;
+    padding-bottom:1rem ;
+    
+}
+.izquierda{
+    margin: 0rem  1rem;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 2rem;
+    padding-bottom:1rem ;
+}
+.h2{ 
+    font-size: 0.8rem;
+    text-align: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: rgb(235, 10, 10);
+    padding:1rem 0.5rem 0rem 0.5rem;
+}
+.parrafo{
+    text-align: center;
+    text-align: justify;
+    padding: 0.5em 0.5rem 1rem 0.5rem;
+    color: white;
+}
+.parrafo::first-letter{
+    font-size: 1rem;
+
+}
+footer{
+   
+    margin: auto ;
+    padding: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.5) ;   
+}
+@media (max-width: 700px){
+    .derecha{
+        margin: 0rem 0.0rem 0rem 0.5rem;
+        width: 50%;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 2rem;
+        padding-bottom:1rem ;
+        
+    }
+    .izquierda{
+        margin: 0rem  0.5rem;
+        width: 50%;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 2rem;
+        padding-bottom:1rem ;
+    }
+}
